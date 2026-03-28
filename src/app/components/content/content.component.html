@@ -1,0 +1,30 @@
+<!-- <div style="height:90%;background-color: lightgoldenrodyellow;">
+    <h3>Reasons Why I learn Angular!!!</h3>
+    <ul>
+        <li>This is developed and maintained by Google</li>
+        <li>This framework is built on top of Typescript</li>
+        <li>This is the popular framework among front end developers</li>
+        <li>This is easier to learn and use</li>
+    </ul>
+</div> -->
+
+
+<!-- DIRECTIVES  -->
+<div style="height:90%;background-color: lightgoldenrodyellow;">
+    <h3>Reasons Why I learn Angular!!!</h3>
+    <!-- *ngFor -->
+    <ul>
+        <li *ngFor="let reason of reasons">{{reason}}</li>
+    </ul>
+    <!-- *ngIf -->
+    <button class="btn btn-primary btn-sm" type="button" (click)="addCount()">Increment Counter</button>
+    <div *ngIf="count>0">Counter:{{count}}</div>
+
+    <!-- *ngSwitch  -->
+     <div [ngSwitch]="count" style="background-color: gainsboro;">
+        <div *ngSwitchCase="2">Count is 2</div>
+        <div *ngSwitchCase="4">Count is 4</div>
+        <div *ngSwitchCase="6">Count is 6</div>
+        <div *ngSwitchDefault>Count is not 2, 4, or 6</div>
+     </div>
+</div>

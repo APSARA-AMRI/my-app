@@ -1,17 +1,5 @@
-<!-- string Interpolation -->
- <h2>{{title}}</h2>
-
- <!-- property Binding -->
-  <h2 [innerHTML]="title">Welcome to the page</h2>
-  
-<!-- event Binding-->
-<button (click)="incrementCount()">Increment</button> 
-<p>Count: {{ count }}</p>
-
-
-<!-- Two way data Binding -->
- <input type="text" [(ngModel)]="userName" placeholder="Enter your name">
-<p>Your name is: {{ userName }}</p>
-
-
+<div>
+  <app-navbar></app-navbar>
+<app-content></app-content>
+</div>
 <router-outlet></router-outlet>
